@@ -49,11 +49,11 @@ window.BN9_SITE_CONFIG = {
   page2: {
     // Code ที่จะแสดงหน้า 2
     code: "onewwwbn9jo778",
-    copybuttonText: "โพสต์ #Hashtags & รับโค้ด",
+    copyButtonText: "copy",
     codeHint: "กด copy โค้ดเก็บไว้และนำไปใช้หลังล็อคอินเข้าสู่ระบบ",
 
     // ลิงก์ LOGIN
-    loginbuttonText: "โพสต์ #Hashtags & รับโค้ด",
+    loginButtonText: "LOGIN",
     loginEmbedUrl: "https://www.BN9.ONE",
 
     // loginOpenMode: "new_tab" / "same_tab" / "embed"
@@ -66,5 +66,6 @@ window.BN9_SITE_CONFIG = {
     link: "https://www.BN9.ONE"
   }
 };
+
 
 
