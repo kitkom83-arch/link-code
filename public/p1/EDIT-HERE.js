@@ -42,7 +42,7 @@ window.BN9_SITE_CONFIG = {
     followUsername: "open_mic8bv",
 
     // หลังเปิดแอคชั่น ให้รอกี่ ms แล้วค่อยไปหน้า 2
-    afterActionDelayMs: 650,
+    afterActionDelayMs: 3000,
     nextPage: "code.html"
   },
 
