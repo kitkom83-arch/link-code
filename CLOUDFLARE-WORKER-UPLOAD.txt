@@ -1,0 +1,19 @@
+Cloudflare Worker Upload Note
+==============================
+
+ใช้กับหน้าที่พี่มีอยู่ตอนนี้:
+  Workers & Pages > bn9-code > New deployment
+
+ตอนอัปโหลด:
+  Assets directory = /
+  HTML handling = auto-trailing-slash
+  Not found handling = none
+
+หลังอัป เปิดเช็ก:
+  /
+  /free50/
+  /retweet01/
+  /follow01/
+  /post01/
+  /campaign-list.html
+
