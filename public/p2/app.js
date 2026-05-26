@@ -92,6 +92,109 @@
     }
   }
 
+  function injectSpinStyles() {
+    if (document.getElementById("bn9-spin-style")) return;
+
+    const style = document.createElement("style");
+    style.id = "bn9-spin-style";
+    style.textContent = `
+      .main-button.is-waiting {
+        opacity: 0.82;
+        cursor: wait;
+      }
+
+      .phone.is-spinning .slot-machine-hero {
+        animation: cabinet-jackpot 0.46s cubic-bezier(0.2, 0.8, 0.2, 1) infinite !important;
+      }
+
+      .phone.is-spinning .slot-machine-hero .machine-reels span {
+        animation: bn9-reel-run 0.18s linear infinite !important;
+      }
+
+      .phone.is-spinning .slot-machine-hero .machine-reels span:nth-child(2) {
+        animation-delay: 0.04s !important;
+      }
+
+      .phone.is-spinning .slot-machine-hero .machine-reels span:nth-child(3) {
+        animation-delay: 0.08s !important;
+      }
+
+      .phone.is-spinning .slot-machine-hero .machine-handle {
+        transform-origin: 50% 8px;
+        animation: bn9-handle-pull 3s ease-in-out forwards !important;
+      }
+
+      .phone.is-spinning .slot-lights i {
+        animation-duration: 0.18s !important;
+      }
+
+      @keyframes bn9-reel-run {
+        0% { transform: translateY(-20px); filter: blur(2px); }
+        50% { transform: translateY(20px); filter: blur(3px); }
+        100% { transform: translateY(-20px); filter: blur(2px); }
+      }
+
+      @keyframes bn9-handle-pull {
+        0% { transform: rotate(0deg); }
+        12% { transform: rotate(36deg); }
+        26% { transform: rotate(-8deg); }
+        42% { transform: rotate(28deg); }
+        58% { transform: rotate(-5deg); }
+        78% { transform: rotate(16deg); }
+        100% { transform: rotate(0deg); }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function getSpinDelay(p1) {
+    const configuredDelay = Number(p1.afterActionDelayMs);
+    return Number.isFinite(configuredDelay) ? Math.max(configuredDelay, 3000) : 3000;
+  }
+
+  function runSlotSpin(phone, durationMs) {
+    return new Promise(function (resolve) {
+      const delay = Number.isFinite(Number(durationMs)) ? Number(durationMs) : 3000;
+
+      if (!phone) {
+        window.setTimeout(resolve, delay);
+        return;
+      }
+
+      const reels = Array.prototype.slice.call(phone.querySelectorAll(".machine-reels span"));
+      const symbols = ["0", "1", "2", "3", "5", "7", "8", "9", "BN9"];
+      let tick = 0;
+
+      phone.classList.remove("is-spinning");
+      void phone.offsetWidth;
+      phone.classList.add("is-spinning");
+
+      const intervalId = window.setInterval(function () {
+        reels.forEach(function (reel, index) {
+          const randomOffset = Math.floor(Math.random() * symbols.length);
+          reel.textContent = symbols[(tick + index * 3 + randomOffset) % symbols.length];
+        });
+        tick += 1;
+      }, 70);
+
+      window.setTimeout(function () {
+        window.clearInterval(intervalId);
+        reels.forEach(function (reel) {
+          reel.textContent = "7";
+        });
+        resolve();
+      }, delay);
+    });
+  }
+
+  function openActionUrl(actionUrl) {
+    if (!actionUrl) return;
+    const opened = window.open(actionUrl, "_blank", "noopener,noreferrer");
+    if (!opened) {
+      window.location.href = actionUrl;
+    }
+  }
+
   function setActionIcon(icon, p1) {
     if (!icon) return;
 
@@ -114,49 +217,37 @@
     const icon = document.getElementById("buttonIcon");
     const text = document.getElementById("buttonText");
     const phone = document.getElementById("rewardPhone");
+    let actionInProgress = false;
 
     if (text) text.textContent = safeText(p1.buttonText, "รีทวิส & รับโค้ด");
     setActionIcon(icon, p1);
 
     if (button) {
       button.addEventListener("click", function () {
+        if (actionInProgress) return;
+        actionInProgress = true;
+
         const actionUrl = makeActionUrl();
-        const actionType = safeText(p1.actionType, "retweet");
         const nextPage = safeText(p1.nextPage, "code.html");
-        const configuredDelay = Number(p1.afterActionDelayMs);
-        const delay = Number.isFinite(configuredDelay) ? Math.max(configuredDelay, 760) : 800;
-        const retweetDelay = 3000;
+        const spinDelay = getSpinDelay(p1);
+        const afterOpenDelay = 700;
 
-        if (phone) {
-          phone.classList.remove("is-spinning");
-          void phone.offsetWidth;
-          phone.classList.add("is-spinning");
-        }
+        button.disabled = true;
+        button.classList.add("is-waiting");
+        button.setAttribute("aria-busy", "true");
 
-        if (actionType === "retweet") {
-          button.disabled = true;
-          button.setAttribute("aria-busy", "true");
-
-          if (actionUrl) {
-            window.open(actionUrl, "_blank", "noopener,noreferrer");
-          }
+        runSlotSpin(phone, spinDelay).then(function () {
+          openActionUrl(actionUrl);
 
           window.setTimeout(function () {
             if (phone) phone.classList.remove("is-spinning");
             button.disabled = false;
+            button.classList.remove("is-waiting");
             button.removeAttribute("aria-busy");
+            actionInProgress = false;
             window.location.href = nextPage;
-          }, retweetDelay);
-          return;
-        }
-
-        if (actionUrl) {
-          window.open(actionUrl, "_blank", "noopener,noreferrer");
-        }
-
-        window.setTimeout(function () {
-          window.location.href = nextPage;
-        }, delay);
+          }, afterOpenDelay);
+        });
       });
     }
   }
@@ -256,6 +347,7 @@
     }
   }
 
+  injectSpinStyles();
   setImage();
   setFooter();
 
