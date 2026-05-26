@@ -25,18 +25,18 @@ window.BN9_SITE_CONFIG = {
     // ไอคอน + ข้อความบนปุ่ม
     iconImage: "assets/retweet.svg",
     iconText: "↻",
-    buttonText: "กด Follow & รับโค้ด",
+    buttonText: "โพสต์ #Hashtags & รับโค้ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/open_mic8bv",
-    pageUrl: "https://www.BN9.ONE",
+    postUrl: "https://x.com/open_mic8bv/status/2059294347804504425",
+    pageUrl: "https://x.com/open_mic8bv/status/2059294347804504425",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
-    actionType: "follow",
+    actionType: "post",
 
     // ใช้เมื่อ actionType = "post"
-    postText: "ร่วมกิจกรรมกับ BN9.ONE",
-    hashtags: "BN9,BN9ONE",
+    postText: "BN9.ONE สมาชิกใหม่รับโปร 100%* รองรับ TrueMoney Wallet ใช้โค้ด onewwwbn9jo778 *เงื่อนไขเป็นไปตามที่กำหนด 18+",
+    hashtags: "BN9ONE,TrueMoneyWallet",
 
     // ใช้เมื่อ actionType = "follow"
     followUsername: "open_mic8bv",
@@ -49,11 +49,11 @@ window.BN9_SITE_CONFIG = {
   page2: {
     // Code ที่จะแสดงหน้า 2
     code: "onewwwbn9jo778",
-    copyButtonText: "copy",
+    copybuttonText: "โพสต์ #Hashtags & รับโค้ด",
     codeHint: "กด copy โค้ดเก็บไว้และนำไปใช้หลังล็อคอินเข้าสู่ระบบ",
 
     // ลิงก์ LOGIN
-    loginButtonText: "LOGIN",
+    loginbuttonText: "โพสต์ #Hashtags & รับโค้ด",
     loginEmbedUrl: "https://www.BN9.ONE",
 
     // loginOpenMode: "new_tab" / "same_tab" / "embed"
@@ -66,3 +66,5 @@ window.BN9_SITE_CONFIG = {
     link: "https://www.BN9.ONE"
   }
 };
+
+
