@@ -25,11 +25,11 @@ window.BN9_SITE_CONFIG = {
     // ไอคอน + ข้อความบนปุ่ม
     iconImage: "assets/retweet.svg",
     iconText: "↻",
-    buttonText: "รีโพส & รับโค้ด",
+    buttonText: "Repost & รับโค๊ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/bn9one_1ev/status/2048146380531875961",
-    pageUrl: "https://www.BN9.ONE",
+    postUrl: "https://x.com/open_mic8bv/status/2059329932074057801",
+    pageUrl: "https://www.bn9.one",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
     actionType: "retweet",
@@ -39,22 +39,22 @@ window.BN9_SITE_CONFIG = {
     hashtags: "BN9,กิจกรรม",
 
     // ใช้เมื่อ actionType = "follow"
-    followUsername: "BN9ONE",
+    followUsername: "open_mic8bv",
 
     // หลังเปิดแอคชั่น ให้รอกี่ ms แล้วค่อยไปหน้า 2
-    afterActionDelayMs: 650,
+    afterActionDelayMs: 3000,
     nextPage: "code.html"
   },
 
   page2: {
     // Code ที่จะแสดงหน้า 2
-    code: "BN9-RP-004",
+    code: "cdthcv7895hs8x1578",
     copyButtonText: "copy",
     codeHint: "กด copy โค้ดเก็บไว้และนำไปใช้หลังล็อคอินเข้าสู่ระบบ",
 
     // ลิงก์ LOGIN
     loginButtonText: "LOGIN",
-    loginEmbedUrl: "https://www.BN9.ONE",
+    loginEmbedUrl: "https://www.bn9.one",
 
     // loginOpenMode: "new_tab" / "same_tab" / "embed"
     loginOpenMode: "new_tab"
@@ -62,7 +62,8 @@ window.BN9_SITE_CONFIG = {
 
   // ข้อความ www + ลิงก์ด้านล่าง ใช้ทั้งหน้า 1 และหน้า 2
   footer: {
-    text: "www.BN9.ONE",
-    link: "https://www.BN9.ONE"
+    text: "www.bn9.one",
+    link: "https://www.bn9.one"
   }
 };
+
