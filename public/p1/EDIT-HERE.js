@@ -25,21 +25,21 @@ window.BN9_SITE_CONFIG = {
     // ไอคอน + ข้อความบนปุ่ม
     iconImage: "assets/retweet.svg",
     iconText: "↻",
-    buttonText: "โพสต์ #Hashtags & รับโค้ด",
+    buttonText: "กด Follow & รับโค้ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/bn9one_1ev/status/2050721842231730456",
+    postUrl: "https://x.com/open_mic8bv",
     pageUrl: "https://www.BN9.ONE",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
-    actionType: "post",
+    actionType: "follow",
 
     // ใช้เมื่อ actionType = "post"
     postText: "ร่วมกิจกรรมกับ BN9.ONE",
     hashtags: "BN9,BN9ONE",
 
     // ใช้เมื่อ actionType = "follow"
-    followUsername: "BN9ONE",
+    followUsername: "open_mic8bv",
 
     // หลังเปิดแอคชั่น ให้รอกี่ ms แล้วค่อยไปหน้า 2
     afterActionDelayMs: 650,
@@ -48,7 +48,7 @@ window.BN9_SITE_CONFIG = {
 
   page2: {
     // Code ที่จะแสดงหน้า 2
-    code: "BN9-PO-002",
+    code: "onewwwbn9jo778",
     copyButtonText: "copy",
     codeHint: "กด copy โค้ดเก็บไว้และนำไปใช้หลังล็อคอินเข้าสู่ระบบ",
 
