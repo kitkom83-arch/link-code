@@ -28,18 +28,18 @@ window.BN9_SITE_CONFIG = {
     buttonText: "โพสต์ #Hashtags & รับโค้ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/open_mic8bv/status/2059294347804504425",
-    pageUrl: "https://x.com/open_mic8bv/status/2059294347804504425",
+    postUrl: "https://x.com/p_th9d/status/2059319072282841352",
+    pageUrl: "https://x.com/p_th9d/status/2059319072282841352",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
     actionType: "post",
 
     // ใช้เมื่อ actionType = "post"
     postText: "BN9.ONE สมาชิกใหม่รับโปร 100%* รองรับ TrueMoney Wallet ใช้โค้ด onewwwbn9jo778 *เงื่อนไขเป็นไปตามที่กำหนด 18+",
-    hashtags: "BN9ONE,TrueMoneyWallet",
+    hashtags: "BN9ONE,TrueMoneyWallet,HappyBridday",
 
     // ใช้เมื่อ actionType = "follow"
-    followUsername: "open_mic8bv",
+    followUsername: "p_th9d",
 
     // หลังเปิดแอคชั่น ให้รอกี่ ms แล้วค่อยไปหน้า 2
     afterActionDelayMs: 3000,
@@ -66,4 +66,5 @@ window.BN9_SITE_CONFIG = {
     link: "https://www.BN9.ONE"
   }
 };
+
 
