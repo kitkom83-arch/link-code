@@ -25,36 +25,36 @@ window.BN9_SITE_CONFIG = {
     // ไอคอน + ข้อความบนปุ่ม
     iconImage: "assets/retweet.svg",
     iconText: "↻",
-    buttonText: "Follow & รับโค้ด",
+    buttonText: "Repost & รับโค้ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/bn9one_1ev/status/2050721842231730456",
-    pageUrl: "https://www.BN9.ONE",
+    postUrl: "https://x.com/win80108/status/2056635832128389350",
+    pageUrl: "https://www.maha289.com",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
-    actionType: "follow",
+    actionType: "retweet",
 
     // ใช้เมื่อ actionType = "post"
     postText: "ร่วมกิจกรรมกับ BN9.ONE",
     hashtags: "BN9,กิจกรรม",
 
     // ใช้เมื่อ actionType = "follow"
-    followUsername: "bn9one_1ev",
+    followUsername: "win80108",
 
     // หลังเปิดแอคชั่น ให้รอกี่ ms แล้วค่อยไปหน้า 2
-    afterActionDelayMs: 650,
+    afterActionDelayMs: 3000,
     nextPage: "code.html"
   },
 
   page2: {
     // Code ที่จะแสดงหน้า 2
-    code: "BN9-FW-006",
+    code: "JZDR8908UWXE9D8G",
     copyButtonText: "copy",
     codeHint: "กด copy โค้ดเก็บไว้และนำไปใช้หลังล็อคอินเข้าสู่ระบบ",
 
     // ลิงก์ LOGIN
     loginButtonText: "LOGIN",
-    loginEmbedUrl: "https://www.BN9.ONE",
+    loginEmbedUrl: "https://www.maha289.com",
 
     // loginOpenMode: "new_tab" / "same_tab" / "embed"
     loginOpenMode: "new_tab"
@@ -62,7 +62,8 @@ window.BN9_SITE_CONFIG = {
 
   // ข้อความ www + ลิงก์ด้านล่าง ใช้ทั้งหน้า 1 และหน้า 2
   footer: {
-    text: "www.BN9.ONE",
-    link: "https://www.BN9.ONE"
+    text: "www.maha289.com",
+    link: "https://www.maha289.com"
   }
 };
+
