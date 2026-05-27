@@ -30,30 +30,30 @@ window.BN9_SITE_CONFIG = {
     // ไอคอน + ข้อความบนปุ่ม
     iconImage: "assets/retweet.svg",
     iconText: "↻",
-    buttonText: "โพสต์ #Hashtags & รับโค้ด",
+    buttonText: "กดหัวใจ & รับโค้ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/bn9one_1ev/status/2050721842231730456",
+    postUrl: "https://x.com/open_mic8bv/status/2059447345453117440",
     pageUrl: "https://www.maha289.com",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
-    actionType: "post",
+    actionType: "like",
 
     // ใช้เมื่อ actionType = "post"
     postText: "ร่วมกิจกรรมกับ MAHA289.COM",
     hashtags: "MAHA289,MAHA289COM",
 
     // ใช้เมื่อ actionType = "follow"
-    followUsername: "bn9one_1ev",
+    followUsername: "open_mic8bv",
 
     // หลังเปิดแอคชั่น ให้รอกี่ ms แล้วค่อยไปหน้า 2
-    afterActionDelayMs: 650,
+    afterActionDelayMs: 3000,
     nextPage: "code.html"
   },
 
   page2: {
     // Code ที่จะแสดงหน้า 2
-    code: "MAHA-PO-008",
+    code: "JZDR8908UWXE9D8G",
     copyButtonText: "copy",
     codeHint: "กด copy โค้ดเก็บไว้และนำไปใช้หลังล็อคอินเข้าสู่ระบบ",
 
@@ -71,3 +71,4 @@ window.BN9_SITE_CONFIG = {
     link: "https://www.maha289.com"
   }
 };
+
