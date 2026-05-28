@@ -33,7 +33,7 @@ window.BN9_SITE_CONFIG = {
     buttonText: "Repost & รับโค้ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/p_th9d/status/2059792833465500136",
+    postUrl: "https://x.com/win80108/status/2059798764681068642",
     pageUrl: "https://www.maha289.com",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
@@ -44,7 +44,7 @@ window.BN9_SITE_CONFIG = {
     hashtags: "MAHA289,MAHA289COM",
 
     // ใช้เมื่อ actionType = "follow"
-    followUsername: "p_th9d",
+    followUsername: "win80108",
 
     // หลังเปิดแอคชั่น ให้รอกี่ ms แล้วค่อยไปหน้า 2
     afterActionDelayMs: 3000,
@@ -71,4 +71,5 @@ window.BN9_SITE_CONFIG = {
     link: "https://www.maha289.com"
   }
 };
+
 
