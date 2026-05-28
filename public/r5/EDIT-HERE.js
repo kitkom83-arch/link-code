@@ -33,7 +33,7 @@ window.BN9_SITE_CONFIG = {
     buttonText: "รีโพส & รับโค้ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/open_mic8bv/status/2059447345453117440",
+    postUrl: "https://x.com/BN9Arena/status/2060025312222818387",
     pageUrl: "https://maha289.com",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
@@ -72,6 +72,7 @@ window.BN9_SITE_CONFIG = {
     link: "https://maha289.com"
   }
 };
+
 
 
 
