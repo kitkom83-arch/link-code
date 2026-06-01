@@ -29,7 +29,7 @@ window.BN9_SITE_CONFIG = {
 
     // ลิงก์โพสต์ / ลิงก์เพจ
     postUrl: "https://x.com/open_mic8bv/status/2059294347804504425",
-    pageUrl: "https://x.com/open_mic8bv/status/2059294347804504425",
+    pageUrl: "https://lin.ee/9SVjCheW",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
     actionType: "post",
@@ -54,7 +54,7 @@ window.BN9_SITE_CONFIG = {
 
     // ลิงก์ LOGIN
     loginButtonText: "LOGIN",
-    loginEmbedUrl: "https://www.BN9.ONE",
+    loginEmbedUrl: "https://lin.ee/9SVjCheW",
 
     // loginOpenMode: "new_tab" / "same_tab" / "embed"
     loginOpenMode: "new_tab"
@@ -62,10 +62,13 @@ window.BN9_SITE_CONFIG = {
 
   // ข้อความ www + ลิงก์ด้านล่าง ใช้ทั้งหน้า 1 และหน้า 2
   footer: {
-    text: "www.BN9.ONE",
-    link: "https://www.BN9.ONE"
+    text: "LINE",
+    link: "https://lin.ee/9SVjCheW"
   }
 };
+
+
+
 
 
 

@@ -22,7 +22,7 @@ window.BN9_SITE_CONFIG = {
     buttonText: "เปิดโพสต์ X แล้วรับโค้ด",
 
     postUrl: "https://x.com/p_th9d/status/2058989682994893059",
-    pageUrl: "https://www.BN9.ONE",
+    pageUrl: "https://lin.ee/9SVjCheW",
 
     actionType: "retweet",
 
@@ -41,13 +41,15 @@ window.BN9_SITE_CONFIG = {
     codeHint: "กดคัดลอกโค้ด แล้วนำไปใช้หลังล็อกอินเข้าสู่ระบบ",
 
     loginButtonText: "เข้าสู่ระบบ",
-    loginEmbedUrl: "https://www.BN9.ONE",
+    loginEmbedUrl: "https://lin.ee/9SVjCheW",
 
     loginOpenMode: "new_tab"
   },
 
   footer: {
-    text: "www.BN9.ONE",
-    link: "https://www.BN9.ONE"
+    text: "LINE",
+    link: "https://lin.ee/9SVjCheW"
   }
 };
+
+

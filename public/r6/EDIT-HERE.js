@@ -1,5 +1,5 @@
 /*
-  ✅ แก้ไฟล์นี้ไฟล์เดียวพอ สำหรับงานนี้: f1
+  ✅ แก้ไฟล์นี้ไฟล์เดียวพอ สำหรับงานนี้: r5
 
   วิธีใช้เร็ว:
   1) แก้ค่าในไฟล์นี้
@@ -22,24 +22,29 @@ window.BN9_SITE_CONFIG = {
     // รูปภาพหน้าแรก: ถ้าจะเปลี่ยนรูป ให้ใส่ไฟล์ใน assets/ แล้วแก้ชื่อนี้
     image: "assets/hero-card.png",
 
+    // วิดีโอหน้าแรก: วางไฟล์ไว้ที่ public/assets/videos/
+    // ตัวอย่าง: heroVideo: "assets/videos/slot-loop.mp4"
+    // หรือ: heroVideo: "assets/videos/fishing-loop.mp4"
+    heroVideo: "",
+
     // ไอคอน + ข้อความบนปุ่ม
     iconImage: "assets/retweet.svg",
     iconText: "↻",
-    buttonText: "โพสต์ #Hashtags & รับโค้ด",
+    buttonText: "รีโพส&หัวใจ&รับโค๊ด",
 
     // ลิงก์โพสต์ / ลิงก์เพจ
-    postUrl: "https://x.com/p_th9d/status/2059319072282841352",
+    postUrl: "https://x.com/BN9Arena/status/2060025312222818387",
     pageUrl: "https://lin.ee/9SVjCheW",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
-    actionType: "post",
+    actionType: "retweet",
 
     // ใช้เมื่อ actionType = "post"
-    postText: "BN9.ONE สมาชิกใหม่รับโปร 100%* รองรับ TrueMoney Wallet ใช้โค้ด onewwwbn9jo778 *เงื่อนไขเป็นไปตามที่กำหนด 18+",
-    hashtags: "BN9ONE,TrueMoneyWallet,HappyBridday",
+    postText: "ร่วมกิจกรรมกับ MAHA289.COM",
+    hashtags: "MAHA289,MAHA289COM",
 
     // ใช้เมื่อ actionType = "follow"
-    followUsername: "p_th9d",
+    followUsername: "open_mic8bv",
 
     // หลังเปิดแอคชั่น ให้รอกี่ ms แล้วค่อยไปหน้า 2
     afterActionDelayMs: 3000,
@@ -48,7 +53,8 @@ window.BN9_SITE_CONFIG = {
 
   page2: {
     // Code ที่จะแสดงหน้า 2
-    code: "onewwwbn9jo778",
+    code: "ZWZAY57AJYYXC2QP",
+    image: "assets/code-card.png",
     copyButtonText: "copy",
     codeHint: "กด copy โค้ดเก็บไว้และนำไปใช้หลังล็อคอินเข้าสู่ระบบ",
 
@@ -66,6 +72,12 @@ window.BN9_SITE_CONFIG = {
     link: "https://lin.ee/9SVjCheW"
   }
 };
+
+
+
+
+
+
 
 
 

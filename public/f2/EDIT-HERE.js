@@ -29,7 +29,7 @@ window.BN9_SITE_CONFIG = {
 
     // ลิงก์โพสต์ / ลิงก์เพจ
     postUrl: "https://x.com/BN9Arena/status/2059439512242340014",
-    pageUrl: "https://www.maha289.com",
+    pageUrl: "https://lin.ee/9SVjCheW",
 
     // แอคชั่นบนปุ่ม: retweet / post / follow / openPost / openPage / none
     actionType: "retweet",
@@ -54,7 +54,7 @@ window.BN9_SITE_CONFIG = {
 
     // ลิงก์ LOGIN
     loginButtonText: "LOGIN",
-    loginEmbedUrl: "https://www.maha289.com",
+    loginEmbedUrl: "https://lin.ee/9SVjCheW",
 
     // loginOpenMode: "new_tab" / "same_tab" / "embed"
     loginOpenMode: "new_tab"
@@ -62,9 +62,12 @@ window.BN9_SITE_CONFIG = {
 
   // ข้อความ www + ลิงก์ด้านล่าง ใช้ทั้งหน้า 1 และหน้า 2
   footer: {
-    text: "www.maha289.com",
-    link: "https://www.maha289.com"
+    text: "LINE",
+    link: "https://lin.ee/9SVjCheW"
   }
 };
+
+
+
 
 
