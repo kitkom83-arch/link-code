@@ -15,7 +15,7 @@
 
 window.BN9_SITE_CONFIG = {
   page1: {
-    image: "assets/hero-card.png",
+    image: "assets/hero-card-16.png",
 
     iconImage: "assets/retweet.svg",
     iconText: "↻",
@@ -36,7 +36,7 @@ window.BN9_SITE_CONFIG = {
   },
 
   page2: {
-    image: "assets/code-card.png",
+    image: "assets/code-card-16.png",
     code: "777ssl191gogoLpPP",
     copyButtonText: "คัดลอกโค้ด",
     codeHint: "กดคัดลอกโค้ด แล้วนำไปใช้หลังล็อกอินเข้าสู่ระบบ",
@@ -52,6 +52,7 @@ window.BN9_SITE_CONFIG = {
     link: "https://bn9.one/"
   }
 };
+
 
 
 
